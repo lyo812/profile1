@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+        
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+        
+    .header {
+        padding: 80px;
+        text-align: center;
+        background: #F4A460;
+        color: white;
+    }
+        
+    .header h1 {
+        font-size: 40px;
+    }
+           
+    .row {  
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .link a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+        
+     
+    .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+        
+    .main {   
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+    }
+        
+    .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+    }
+        
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+    }
+        
+    @media screen and (max-width: 700px) {
+        .row {   
+            flex-direction: column;
+        }
+    }
+        
+    @media screen and (max-width: 400px) {
+        .navbar a {
+            float: none;
+            width:100%;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>NHÓM 10 LẬP TRÌNH WEB</h1>
+    <p>Thành viên: Nguyễn Sông Ngân</p>
+</div>
+        
+<div class="row">
+    <div class="side">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <img src="img/ngan.jpg" alt="Avatar" style="width: 100%">
+    </div>
+
+    <div class="main">
+        <h2>Thông tin cá nhân</h2>
+        <p>Họ tên: Nguyễn Sông Ngân</p>
+        <p>Ngày sinh: 08/12/2000</p>
+        <p>Quê quán: Hoàng Mai Nghệ An</p>
+        <h4>Sinh viên trường đại học Vinh</h4>
+        <p>Lớp: 59K3 - CNTT</p>
+        <p>MSV: 18574802010007</p>
+        <h2>Giới thiệu bản thân</h2>
+        <p>Tính cách: Ít nói, sống nội tâm và thích màu xanh lá.<p>
+        <p>Sở thích: Ăn, ngủ, nghỉ, anime.<p>
+        <p>Đam mê: Công nghệ, thể thao, hội họa và cái đẹp.</p> 
+        <div class="link">
+            <p>Liên lạc: <a href="https://zalo.me/0989537591">zalo</a>, <a href="https://www.facebook.com/profile.php?id=100009459840882">facebook</a>, <a href="https://instagram.com/ngan660">instagram</a>.</p>
+        </div>
+        <h4>Cảm ơn vì đã quen biết nhau!!</h4>
+    </div>
+</div>
+        
+<div class="footer">
+    <h2>hihi</h2>
+</div>
+        
+</body>    
+</html>
